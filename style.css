@@ -1,5 +1,16 @@
-h2: {
-	font-size: 100px;
-	font-family: serif;
-	color: red;
+/*blue #6666ff;*/
+
+h1 {
+	font-family: 'Akronim', cursive;
+	font-size: 7rem;
+	color: #e6e600;
+}
+
+h2 {
+	font-family: 'Aladin', cursive;
+	color: white;
+}
+
+.comments {
+	display: none;
 }
