@@ -9,7 +9,25 @@ function hamburgerMenu() {
 }
 
 
-//HEADER CAROUSEL
+//COMMENTS CAROUSEL
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("comments");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 2000); 
+}
+
+
+
+/*//HEADER CAROUSEL
 var myIndex = 0;
 carousel();
 
@@ -24,8 +42,9 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
+*/
 
-//HEADER CAROUSEL - SLIDESHOW INDICATORS
+/*//HEADER CAROUSEL - SLIDESHOW INDICATORS
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -51,4 +70,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
-}
+}*/
